@@ -21,8 +21,8 @@ public class MainTest {
   }
 
   @Test
-  //This test fails because totalFinancingCosts is calculated incorrectly in calculator. Please comment that assertion if
-  //you want the test to pass
+  //This test fails because totalFinancingCosts is calculated incorrectly in calculator. Please comment totalFinancingCosts
+  //assertion in "checkIfFinancialLeasingDataIsCalculatedCorrectly" check if you want the test to pass
   public void checkIfCalculatorCalculatesCorrectValues() {
     calculatorPage
         .enterLeasingData()

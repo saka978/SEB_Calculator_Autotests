@@ -109,6 +109,7 @@ public class CalculatorPage extends Base {
        totalInterest +=Double.parseDouble(scheduleInterests.get(i).getText());
        totalPayment +=Double.parseDouble(schedulePayments.get(i).getText());
     }
+    //Those assertions fail, because totalSchedule, totalLeasingPayment and TotalPayment is calculated incorrectly in schedule
     assertEquals(scheduleTotalInterest.getText(),String.format("%.2f",totalInterest));
     assertEquals(scheduleTotalLeasingPayment.getText(),String.format("%.2f",totalLeasingPayment));
     assertEquals(scheduleTotalPayment.getText(),String.format("%.2f",totalPayment));
